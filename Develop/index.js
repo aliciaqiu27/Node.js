@@ -38,13 +38,12 @@ function promptUser() {
         message: 'Provide your tests here:',
     },
     {
-        type: 'input',
+        type: 'list',
         name: 'license',
         choices:[
-        'MIT',
-        'MIT',
-        'MIT',
-
+            'Apache',
+            'GPL',
+            'MIT',
         ]
     },
     {
