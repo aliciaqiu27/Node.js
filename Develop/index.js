@@ -1,9 +1,12 @@
-const inquirer = require('inquirer');
-const fs = require('fs');
-
+const fs = require("fs");
+const util = require("util");
+const inquirer = require("inquirer");
+const generateMarkdown = require("./utils/generateMarkdown")
+const writeFileAsync = util.promisify(fs.writeFile);
 
 // array of questions for user
-inquirer.prompt([
+function promptUser() {
+    return inquirer.prompt([
     {
         type: 'input',
         name: 'title',
@@ -49,63 +52,22 @@ inquirer.prompt([
         name: 'email',
         message: 'What is your email address?',
     },
-
-
-]).then(response => {
-
-    const README =
-    `#${response.title}
-    
-    ## Description 
-    ${response.description}
-
-    ## Table of Contents (Optional)
-    [Installation](#Installation)
-    [Usage](#Usage)
-    [Tests](#Tests)
-    [Credits](#Credits)
-    [License](#License)
-    [License](#Questions)
-
-    ## Installation
-    ${response.installation}
-    
-    ## Usage 
-    ${response.usage}
-
-    ## Tests
-    ${response.tests}
-
-    ## Credits
-    ${response.contribution}
-
-    ## License
-    ${response.license}
-
-    ## Questions
-    My github is:https://github.com/${response.github}
-    You can directly contact me at: https://github.com/${response.email}
-
-    `
+]
+)};
 
 // function to write README file
+// Async function using util.promisify 
+async function init() {
+    try {
+        // Ask user questions and generate responses
+        const answers = await promptUser();
+        const generateContent = generateMarkdown(answers);
+        // Write new README.md to dist directory
+        await writeFileAsync('alicia.md', generateContent);
+        console.log('✔️  Successfully wrote to README.md');
+    } catch (err) {
+        console.log(err);
+    }
+}
 
-    fs.writeFile('README.md', README, (err) => {
-        err ? console.log("oops") : console.log("Yay!")
-    })
-
-});
-
-
-// function writeToFile(fileName, data) {
-// }
-
-// function to initialize program
-// function init() {
-
-// }
-
-// function call to initialize program
-// init();
-
-
+init();

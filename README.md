@@ -1,10 +1,9 @@
 # 09 Node.js Homework: Professional README Generator
 
-##  Using Third Party APIs to Create a Work Day Planner
+##  Using Node.js to generate a README generator
 This application helps the User to generate a high-quality README for any kinds of deployed project. The purpose of this app is to save time by automatically entitling the project, alongside different sections that include Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions. 
 
 ## Usage 
-
 1) Open the index.js file in Visual Studio Code.
 2)
 1) Click one of the time blocks and type in anything you want to plan during that hour. Then, click on the "Save" button to have your input saved and see in the future, even after refreshing the page! See [How To Use Demo](How-To-Use.PNG). 
@@ -14,7 +13,6 @@ https://choosealicense.com/licenses/mit/
 
 
 ## License
-
 MIT License
 
 Copyright (c) [2020] [Alicia Qiu Cheung]
