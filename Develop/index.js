@@ -4,7 +4,7 @@ const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown")
 const writeFileAsync = util.promisify(fs.writeFile);
 
-// array of questions for user
+// array of questions for User
 function promptUser() {
     return inquirer.prompt([
     {
@@ -56,17 +56,16 @@ function promptUser() {
 )};
 
 // function to write README file
-// Async function using util.promisify 
 async function init() {
     try {
         // Ask user questions and generate responses
-        const answers = await promptUser();
-        const generateContent = generateMarkdown(answers);
+        const response = await promptUser();
+        const generateContent = generateMarkdown(response);
         // Write new README.md to dist directory
-        await writeFileAsync('alicia.md', generateContent);
-        console.log('✔️  Successfully wrote to README.md');
+        await writeFileAsync('README.md', generateContent);
+        console.log('Success! README created.');
     } catch (err) {
-        console.log(err);
+        console.log('err');
     }
 }
 
