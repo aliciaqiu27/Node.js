@@ -1,21 +1,26 @@
-# 09 Node.js Homework: Professional README Generator
+# Professional README Generator Using Node.js :wave:
 
 ##  Using Node.js to generate a README generator
 This application helps the User to generate a high-quality README for any kinds of deployed project. The purpose of this app is to save time by automatically entitling the project, alongside different sections that include Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions. 
 
+
+## Installation
+npm init
+npm install inquirer
+
+
 ## Usage 
 1) Open the index.js file in Visual Studio Code.
-2)
-1) Click one of the time blocks and type in anything you want to plan during that hour. Then, click on the "Save" button to have your input saved and see in the future, even after refreshing the page! See [How To Use Demo](How-To-Use.PNG). 
+2) Run the "node index.js" command in your Terminal.
+3) Look at this video instructions: [How To Use Demo](How-To-Use.PNG). 
 
 ## Credits
-https://choosealicense.com/licenses/mit/
-
+![license](https://img.shields.io/badge/License-MIT-brightgreen)
 
 ## License
 MIT License
 
-Copyright (c) [2020] [Alicia Qiu Cheung]
+Copyright (c) [2021] [Alicia Qiu Cheung]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
