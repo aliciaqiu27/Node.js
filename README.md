@@ -55,5 +55,5 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ## Questions
-My github is: :octocat: https://github.com/${response.github}
-You can directly contact me at: :e-mail: ${response.email}
+<br> My github is: :octocat: https://github.com/aliciaqiu27</br>
+<br>You can directly contact me at: :e-mail: aliciaqiu27@gmail.com</br>

@@ -30,8 +30,8 @@ ${response.contribution}
 ![license](https://img.shields.io/badge/License-${response.license}-brightgreen)
 
 ## Questions
-My github is: :octocat: https://github.com/${response.github}
-You can directly contact me at: :e-mail: ${response.email}
+<br>My github is: :octocat: https://github.com/${response.github}</br>
+<br>You can directly contact me at: :e-mail: ${response.email}</br>
 `;
 }
 
