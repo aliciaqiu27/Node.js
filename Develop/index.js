@@ -16,11 +16,6 @@ inquirer.prompt([
     },
     {
         type: 'input',
-        name: 'tableOfContents',
-        message: 'Insert the table of contents here (optional):',
-    },
-    {
-        type: 'input',
         name: 'installation',
         message: 'What are the steps required to install your project?',
     },
@@ -31,13 +26,13 @@ inquirer.prompt([
     },
     {
         type: 'input',
-        name: 'tests',
-        message: 'Provide your tests here:',
+        name: 'contribution',
+        message: 'List your collaborators, if any, with links to their GitHub profiles:',
     },
     {
         type: 'input',
-        name: 'contribution',
-        message: 'List your collaborators, if any, with links to their GitHub profiles:',
+        name: 'tests',
+        message: 'Provide your tests here:',
     },
     {
         type: 'input',
@@ -46,20 +41,31 @@ inquirer.prompt([
     },
     {
         type: 'input',
-        name: 'questions',
-        message: 'Provide your questions here:',
+        name: 'github',
+        message: 'What is your GitHub username?',
     },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'What is your email address?',
+    },
+
 
 ]).then(response => {
 
     const README =
-`${response.title}
+    `#${response.title}
     
-    Description 
+    ## Description 
     ${response.description}
 
     ## Table of Contents (Optional)
-    ${response.tableOfContents}
+    [Installation](#Installation)
+    [Usage](#Usage)
+    [Tests](#Tests)
+    [Credits](#Credits)
+    [License](#License)
+    [License](#Questions)
 
     ## Installation
     ${response.installation}
@@ -77,13 +83,14 @@ inquirer.prompt([
     ${response.license}
 
     ## Questions
-    ${response.questions}
+    My github is:https://github.com/${response.github}
+    You can directly contact me at: https://github.com/${response.email}
 
     `
 
 // function to write README file
 
-    fs.writeFile('alicia.md', README, (err) => {
+    fs.writeFile('README.md', README, (err) => {
         err ? console.log("oops") : console.log("Yay!")
     })
 
