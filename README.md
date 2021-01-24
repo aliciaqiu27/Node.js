@@ -4,6 +4,15 @@
 This application helps the User to generate a high-quality README for any kinds of deployed project. The purpose of this app is to save time by automatically entitling the project, alongside different sections that include Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions. 
 
 
+## Table of Contents
+* [Installation](#Installation)
+* [Usage](#Usage)
+* [Tests](#Tests)
+* [Credits](#Credits)
+* [License](#License)
+* [License](#Questions)
+
+
 ## Installation
 npm init
 npm install inquirer
@@ -14,10 +23,15 @@ npm install inquirer
 2) Run the "node index.js" command in your Terminal.
 3) Look at this video instructions: [How To Use Demo](How-To-Use.PNG). 
 
+## Tests
+
 ## Credits
-![license](https://img.shields.io/badge/License-MIT-brightgreen)
+Alicia Qiu Cheung (https://github.com/aliciaqiu27)
+
 
 ## License
+![license](https://img.shields.io/badge/License-MIT-brightgreen)
+
 MIT License
 
 Copyright (c) [2021] [Alicia Qiu Cheung]
@@ -39,3 +53,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+## Questions
+My github is: :octocat: https://github.com/${response.github}
+You can directly contact me at: :e-mail: ${response.email}
