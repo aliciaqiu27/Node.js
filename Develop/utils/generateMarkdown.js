@@ -31,7 +31,7 @@ ${response.contribution}
 
 ## Questions
 My github is:(https://github.com/${response.github})
-You can directly contact me at: (${response.email})
+<br>  You can directly contact me at: (${response.email}) </br>
 `;
 }
 

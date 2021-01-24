@@ -29,4 +29,4 @@ https://choosealicense.com/licenses/mit/
 
 ## Questions
 My github is:(https://github.com/aliciaqiu27)
-You can directly contact me at: (aliciaqiu27@gmail.com)
+* You can directly contact me at: (aliciaqiu27@gmail.com)
