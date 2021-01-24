@@ -7,12 +7,12 @@ function generateMarkdown(response) {
 ${response.description}
 
 ## Table of Contents (Optional)
-[Installation](#Installation)
-[Usage](#Usage)
-[Tests](#Tests)
-[Credits](#Credits)
-[License](#License)
-[License](#Questions)
+* [Installation](#Installation)
+* [Usage](#Usage)
+* [Tests](#Tests)
+* [Credits](#Credits)
+* [License](#License)
+* [License](#Questions)
 
 ## Installation
 ${response.installation}

@@ -1,16 +1,16 @@
 
-<h1> Hello </h1>
+<h1>Hello </h1>
   
 ## Description
 s
 
 ## Table of Contents (Optional)
-[Installation](#Installation)
-[Usage](#Usage)
-[Tests](#Tests)
-[Credits](#Credits)
-[License](#License)
-[License](#Questions)
+*[Installation](#Installation)
+*[Usage](#Usage)
+*[Tests](#Tests)
+*[Credits](#Credits)
+*[License](#License)
+*[License](#Questions)
 
 ## Installation
 s
