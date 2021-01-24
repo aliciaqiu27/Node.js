@@ -22,10 +22,10 @@ s
 s
 
 ## Credits
-
+s
 
 ## License
-s
+[![license](https://img.shields.io/badge/License-s-brightgreen)]
 
 ## Questions
 My github is:(https://github.com/s)

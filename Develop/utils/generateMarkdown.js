@@ -27,7 +27,7 @@ ${response.tests}
 ${response.contribution}
 
 ## License
-${response.license}
+![license](https://img.shields.io/badge/License-${response.license}-brightgreen)
 
 ## Questions
 My github is:(https://github.com/${response.github})

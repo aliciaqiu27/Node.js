@@ -40,7 +40,12 @@ function promptUser() {
     {
         type: 'input',
         name: 'license',
-        message: 'Provide the license to the project here:',
+        choices:[
+        'MIT',
+        'MIT',
+        'MIT',
+
+        ]
     },
     {
         type: 'input',
